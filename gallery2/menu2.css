@@ -1,0 +1,260 @@
+
+/* gorizontalinoe menu1*/
+.menu1 ul{
+  padding: 0px;
+  margin: 0px;
+  display: table;
+  min-width:100px;
+  border-radius: 15px solid #666;
+}
+ .menu1 li {
+  display: table-cell;
+  background-color: #848484;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+ }
+ .menu1 ul ul{
+  /*display: none;*/
+  display: block;
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.4s 0.4s ease-out;
+ }
+ .menu1 ul ul a {
+  background-color: silver;
+  color: black;
+  font-family: comic sans ms;
+  text-shadow: none;
+  font-size: 16px;
+ }
+.menu1 ul ul a:hover{
+  background-color:#D88B91;/*rozovii*/
+ }
+.menu1 a{
+  color: black;/*cvet verh meniu text razmer menu po shirine*/
+  text-decoration: none;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  min-width: 265px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: georgia;
+  text-shadow: 2px 2px #D88B91; /*#F4B7CB;*/
+ }
+ .menu1 a:hover{
+  background-color: #D88B91;/*rozovii*/
+  border-radius: 5px;
+ 
+ }
+ .menu1 ul ul li {
+  display: block;
+    border-radius: 5px;
+
+}
+ .menu1 li:hover ul{
+ /* display: block; */
+  height: 150px;
+  border-radius: 5px;
+  
+ }
+/* pozitionrovanie menu1 gorizontali*/
+.menu1 { 
+      margin-top:5px;
+      bottom:1865px;
+      position: relative;
+      border-radius: 15px;
+      width: 100px;
+
+      
+   }
+
+
+
+/* vertikali menu*/
+
+body {
+   margin: 0;
+   padding: 0;
+   font: 1em/1.4em sans-serif;
+}
+
+a{ text-decoration: none; }
+
+ul{ margin: 0;
+padding: 0;
+list-style: none;  
+}
+.side {
+  width: 220px;
+  margin: 20px;
+} 
+.menu a{
+        background: #848484;
+        color:#fff;
+        padding:10px;
+        display: block;
+        border-bottom: 1px solid #3d3d3d;
+        transition: 0.5s all;}
+
+.menu a:hover { background:#D88988; 
+                 padding: 10px 0px 10px 20px;} 
+     
+.menu li  .menud li a {
+      border-radius: 0px;
+      border-bottom: 1px solid #666;
+}
+.menu li:first-child a{
+    border-radius: 3px 3px 0px 0px;
+  }
+.menu li:first-child a .menud li .menud li:first-child a{
+    border-radius: 3px 3px 0px 0px;
+
+  }
+.menu li:first-child a .menud li .menud li:first-child a{
+    border-radius: 0px 0px 3px 3px;
+    border-bottom: 0px;
+  }
+.menu_list{
+         position: relative;
+  }
+.menud{ 
+       position: absolute; 
+       width:100%;    
+       left:96%; 
+       top:-9999em;
+       opacity: 0;
+       border-left: 10px solid transparent;
+       transition: 0.5s opacity;
+   }
+.menu_list:hover .menud
+   { opacity: 1;
+   top:0;}
+
+   /* ikonki strlki*/
+.menu_list::after{
+         content: "";
+         position: absolute;
+         border: 5px solid;
+         border-color: transparent transparent transparent #eee;
+         top: 1em;
+         right: 0.7em;
+         transition: 0.5s;
+  }
+.menu_list:hover::after{
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+/* pozitionirovanie menu2 vertikali*/
+  .side { 
+      margin: 5px;
+      bottom: 1858px;
+      position: relative;
+      border-radius: 15px;
+   }
+
+
+
+
+  /*stili dl9 gallery s borderob i zamenoi tveta pri navedeni left 100px ne nujen*/
+
+.gallery img {
+  margin: 15px;
+  border: 3px dotted #E0B3A7;
+  box-shadow: 10px 10px 80px 2px white;
+  /*left: 100px;*/
+}
+a.photo:hover img{
+  border: 3px dotted #666;
+}
+
+        /* text content center*/
+
+#TextContent { /*pozitionirovanie i zadnii fon*/
+   
+       height: 950px;
+       width: 850px;
+       padding:5px;
+       background: url(../img/389.png);
+       margin-left:232px;
+       bottom:755px;
+       position: relative;
+       border-radius: 15px;
+       border: 3px inset #BAB6AE;
+      }
+
+      .post_title{ 
+
+        text-align: center;
+       color: black;
+       font-family: verdana;
+       text-shadow: 2px 2px #D88B91;
+
+      }
+       
+
+   .text p { color:black; /*textovoi napolniteli dl9 centr contenta*/
+     text-shadow: none;
+     text-align: left;
+
+   }
+
+
+   /*gifcontent sleva*/
+    
+    #GifContent {
+    height: 450px;
+    width: 210px;
+    /*background: #CDC9C0;*/
+    border-radius: 15px;
+    position: relative;
+    margin-left: 1104px;
+    bottom:-70px;
+    padding: 2px 2px 2px 2px;
+    opacity: 0.9; }
+
+    .GifContent2 {
+    height: 350px;
+    width: 200px;
+    
+    border-radius: 15px;
+    position: relative;
+    margin:5px;
+    bottom:-60px;
+    padding:6px;
+    opacity: 0.9; }
+
+  /*.footer {
+  height: 50px;
+  min-width: 100%;
+  background: #666;
+  margin-top:-1100px; /*fixatia footera*/
+  /*border: 2px ridge pink;*/
+
+  .footer {
+  min-height: 80px;
+  min-width: 100%;
+  background: #666;
+  margin-top:-1170px; /*fixatia footera*/
+  border: 2px ridge pink;
+
+}
+
+.flagIcons{ 
+      margin-left:1200px;
+      bottom:2180px;
+       position: relative;
+       padding: 10px;
+
+
+}
+
+.textf { 
+color: pink;
+font-family: comic sans ms;
+text-align: center; }
+
